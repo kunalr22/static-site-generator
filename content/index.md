@@ -1,46 +1,30 @@
-# Tolkien Fan Club
+# Static Site Generator
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![Static Site Generator logo](/images/logo.png)
 
-Here's the deal, **I like Tolkien**.
+Builds a full site from Markdown content and a shared HTML template. This site documents the generator itself and provides a quick tour of how it works.
 
-> "I am in fact a Hobbit in all but size."
->
-> -- J.R.R. Tolkien
+## What you can do
 
-## Blog posts
+- Write content in Markdown
+- Reuse a single HTML template
+- Copy static assets (CSS, images)
+- Generate clean, deployable HTML
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+## Get started
 
-## Reasons I like Tolkien
+- [How it works](/how-it-works/)
+- [Usage](/usage/)
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+## Project goals
 
-## My favorite characters (in order)
+1. Keep content readable and source-controlled
+2. Make builds deterministic
+3. Keep deployment dead simple
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+If you’re browsing on GitHub Pages, links and assets are adjusted using the configured base path.
 
-Here's what `elflang` looks like (the perfect coding language):
+## External links
 
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
-
-Want to get in touch? [Contact me here](/contact).
-
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+- [GitHub Pages Docs](https://docs.github.com/en/pages)
+- [Python Docs](https://docs.python.org/3/)

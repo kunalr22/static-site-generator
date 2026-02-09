@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How it works</title>
+    <link href="/static-site-generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>How it works</h1><p>This generator turns a tree of Markdown files into a matching tree of HTML files.</p><h2>Build pipeline</h2><ol><li><b>Clean output</b>: remove the previous build output.</li><li><b>Copy static assets</b>: copy CSS and images into the output folder.</li><li><b>Parse Markdown</b>: convert blocks and inline nodes into HTML.</li><li><b>Apply template</b>: inject title and content into template placeholders.</li><li><b>Write output</b>: save HTML files to the matching output paths.</li></ol><h2>Directory mapping</h2><pre><code>content/            -> docs/
+content/index.md    -> docs/index.html
+content/blog/a.md   -> docs/blog/a.html
+</code></pre><h2>Base path support</h2><p>When deploying to a subdirectory (like GitHub Pages), the generator rewrites:</p><ul><li><code>href="/static-site-generator/</code> to <code>href="{basepath}</code></li><li><code>src="/static-site-generator/</code> to <code>src="{basepath}</code></li></ul><p>So links and images resolve correctly from a subpath.</p></div></article>
+  </body>
+</html>

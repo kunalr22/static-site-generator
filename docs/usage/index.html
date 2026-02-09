@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Usage</title>
+    <link href="/static-site-generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>Usage</h1><p>Run the build from the project root using the helper script.</p><h2>Build</h2><pre><code>./build.sh
+</code></pre><h2>Output</h2><p>The generated site is written to the <code>docs/</code> directory so GitHub Pages can serve it by default.</p><h2>Content authoring</h2><p>Create pages under <code>content/</code> using a directory-per-page layout:</p><pre><code>content/
+	index.md
+	usage/
+		index.md
+	how-it-works/
+		index.md
+	blog/
+		first-post/
+			index.md
+</code></pre><p>You can nest as deeply as you want. Each <code>dirname/index.md</code> becomes <code>dirname/index.html</code> in the output.</p><ul><li>Use headings (<code>#</code>, <code>##</code>) for structure.</li><li>Use absolute root links like <code>/usage/</code> and <code>/images/logo.png</code>.</li></ul></div></article>
+  </body>
+</html>
