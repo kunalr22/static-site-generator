@@ -18,6 +18,13 @@
 	blog/
 		first-post/
 			index.md
-</code></pre><p>You can nest as deeply as you want. Each <code>dirname/index.md</code> becomes <code>dirname/index.html</code> in the output.</p><ul><li>Use headings (<code>#</code>, <code>##</code>) for structure.</li><li>Use absolute root links like <code>/usage/</code> and <code>/images/logo.png</code>.</li></ul></div></article>
+</code></pre><p>You can nest as deeply as you want. Each <code>dirname/index.md</code> becomes <code>dirname/index.html</code> in the output.</p><ul><li>Use headings (<code>#</code>, <code>##</code>) for structure.</li><li>Use absolute root links like <code>/usage/</code> and <code>/images/logo.png</code>.</li><li>Each file needs at least one main heading (<code># </code>) so the title can be extracted.</li></ul><h2>Supported blocks</h2><p>The Markdown parser supports these block types:</p><ul><li>Paragraphs</li><li>Headings (<code>#</code> through <code>######</code>)</li><li>Code blocks (triple backticks)</li><li>Blockquotes (<code>></code>)</li><li>Unordered lists (<code>-</code> or <code>*</code>)</li><li>Ordered lists (<code>1.</code>, <code>2.</code>, ...)</li></ul><p>Note: Code blocks can’t contain blank lines. The parser splits blocks on double newlines, which breaks fenced code blocks.</p><h2>Supported inline text</h2><p>Inline text types include:</p><ul><li>Bold (use <b>double asterisks</b>)</li><li>Italic (use <i>underscores</i>)</li><li>Code (use backticks around code)</li><li>Links (use square brackets + parentheses)</li><li>Images (use an exclamation mark + brackets + parentheses)</li></ul><p>Nested inline styles aren’t supported (for example, bold inside italics).</p><h2>Example</h2><p>Note: This example avoids blank lines inside the code block.</p><pre><code># Hello Site
+![Static Site Generator logo](/images/logo.png)
+Here is **bold**, _italic_, and `code`.
+> A small quote.
+- Item one
+- Item two
+[Back home](/)
+</code></pre><p><a href="/static-site-generator/usage/example/">Here’s this example visualized</a></p></div></article>
   </body>
 </html>

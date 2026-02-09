@@ -24,6 +24,9 @@ Builds a full site from Markdown content and a shared HTML template. This site d
 
 If you’re browsing on GitHub Pages, links and assets are adjusted using the configured base path.
 
+> "Simplicity is the soul of efficiency."  
+> — Austin Freeman
+
 ## External links
 
 - [GitHub Pages Docs](https://docs.github.com/en/pages)
