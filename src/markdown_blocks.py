@@ -26,9 +26,9 @@ def block_to_block_type(block: str):
         return BlockType.HEADING
     if len(lines) > 1 and lines[0].startswith("```") and lines[-1].startswith("```"):
         return BlockType.CODE
-    if block.startswith("> "):
+    if block.startswith(">"):
         for line in lines:
-            if not line.startswith("> "):
+            if not line.startswith(">"):
                 return BlockType.PARAGRAPH
         return BlockType.QUOTE
     if block.startswith("- "):
@@ -97,6 +97,8 @@ def strip_block_type_identifier(block, block_type):
             for line in lines:
                 if line.startswith("> "):
                     new_lines.append(line[2:])
+                elif line.startswith(">"): 
+                    new_lines.append(line[1:].lstrip())
                 else:
                     new_lines.append(line)
             return " ".join(new_lines)
